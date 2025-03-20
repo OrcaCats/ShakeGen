@@ -8,9 +8,9 @@ from tensorflow.keras.layers import Activation, Dense, LSTM
 # Configurable Variables
 TRAINING_FILE = "ShakeGen_Training.txt"
 MODEL_FILE = "ShakeSphereGenA.h5"
-EPOCHS = 1000
-BATCH_SIZE = 512
-LAYER_COUNT = 10  # Number of Dense layers
+EPOCHS = 64
+BATCH_SIZE = 256
+LAYER_COUNT = 6  # Number of Dense layers
 
 def sample(preds, temperature=1.0):
     preds = np.asarray(preds).astype('float64')
